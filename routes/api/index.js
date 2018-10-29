@@ -1,8 +1,8 @@
 import express from 'express';
 let router = express.Router();
-import all_feed from './all_feed';
+import test from './test';
 
 
-router.use('/all_feed', all_feed);
+router.use('/test', test);
 
 module.exports = router;
