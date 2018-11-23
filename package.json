@@ -6,7 +6,7 @@
   "scripts": {
     "build": "babel src/start.js -d build",
     "start": "nodemon start.js",
-    "foreverStart": "forever start -c --minUptime 5000 --spinSleepTime 2000 start.js"
+    "foreverStart": "forever start --minUptime 5000 --spinSleepTime 2000 start.js"
   },
   "keywords": [],
   "author": "",
