@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src/start.js -d build",
-    "start": "nodemon start.js",
+    "start": "babel-node -- index",
     "foreverStart": "forever start --minUptime 5000 --spinSleepTime 2000 start.js"
   },
   "keywords": [],
@@ -33,7 +33,6 @@
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
     "@babel/register": "^7.0.0",
-    "nodemon": "^1.17.5",
     "webpack": "^4.12.0",
     "webpack-cli": "^3.0.8",
     "webpack-merge": "^4.1.3",
